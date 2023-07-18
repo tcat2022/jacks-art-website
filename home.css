@@ -92,13 +92,13 @@ right:0;
 display: block;
     text-decoration: none;
     color: black;
-    font-size: 40px;
+    font-size: 35px;
     transition: font-size .2s ;
 }
 
 #links-container ul li a:hover
 {
-    font-size:35px;
+    font-size:40px;
 }
 
 
@@ -135,6 +135,115 @@ display: block;
     100%{
         opacity: 1;
      }
+}
+
+#home-links{
+display: flex;
+    position: relative;
+height: 700px;
+width: 100%;
+overflow: hidden;
+gap: 150px;
+align-items: center;
+justify-content: center;
+}
+
+.circle-links{
+    position: relative;
+margin-top: 200px;
+width: 250px;
+overflow: hidden;
+height: 250px;
+border-radius: 50%;
+border: 1px solid black;
+}
+
+.circle-links img{
+
+object-fit: cover;
+width: 100%;
+height: 100%;
+transition: transform .5s;
+}
+
+.circle-links img:hover{
+   transform: scale(1.2);
+}
+
+.circle-links p{
+    position: absolute;
+    top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size:25px ;
+color:rgb(252, 251, 242) ;
+white-space: nowrap;
+}
+
+#art-section{
+    position: absolute;
+    left: 50%;
+    top: 21%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+}
+
+#scroll-down{
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%);
+    z-index: -1;
+
+}
+
+#scroll {
+width: 100%;
+height: 100%;
+background-color: red;
+}
+
+#scroll p {
+    position: absolute;
+    bottom: -35%;
+   left: 100%;
+    transform: translate(-50%);
+    white-space:nowrap;
+    font-size:15px;
+    font-weight: bolder;
+}
+
+#scroll-box{
+    position: relative;
+    left: 50%;
+
+    width: 35px;
+    height: 60px;
+border: 2px solid black;
+border-radius: 20px;
+}
+
+#scroll-dot{
+    position: absolute;
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%);
+width:10px;
+height: 20px;
+border: 2px solid black;
+border-radius: 10px;
+animation: fade 1.5s infinite;
+}
+
+@keyframes fade {
+    30%{
+        opacity: 1;
+    }
+    
+    100%{
+top: 50%;
+opacity: 0;
+    }
 }
 
 @media (max-width: 450px) {
