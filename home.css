@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Playfair+Display:ital@1&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -6,6 +10,7 @@
 
 body{
    background-color: rgb(252, 251, 242); 
+overflow-x: hidden;
 }
 
 
@@ -16,17 +21,17 @@ body{
     height: 500px;
     overflow: hidden;
     z-index: -1;
-  
+
 }
 
 #img{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height:100%;
     background-image: url("test-art.jpg");
     background-repeat: no-repeat;
-    background-size:100%,100%;
+    background-size:100% 100%;
 }
 
 #header h1{
@@ -35,8 +40,10 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 60px;
+    font-size: 65px;
     white-space: nowrap;
+    font-family: 'Lumanosimo', cursive;
+    font-family: 'Playfair Display', serif;
 }
 
 #wrap{
@@ -49,9 +56,10 @@ body{
 position: relative;
     width: 100%;
     height: 50px;
-    border: 2px solid black;
+    border-bottom: 5px solid black;
+    border-top: 3px solid black;
     z-index: 2;
-    background-color:rgb(255, 255, 255) ;
+    background-color:rgb(255, 255, 255);
 }
 
 #nav-bar h1 {
@@ -62,14 +70,76 @@ position: relative;
     font-size: 45px;
 }
 
+
+
+#links-container{
+position: absolute;
+right:0;
+}
+
+#links-container ul{
+    list-style: none;
+}
+
+#links-container ul li {
+    float: left;
+    width: 140px;
+    height: 42px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#links-container ul li a {
+display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+
+
+#dropdown  ul li{
+background:rgb(255, 255, 255) ;
+height: 50px;
+display: none;
+transition: all .3s ease-in-out;
+border-bottom: 5px solid black;
+animation: one .5s ease;
+}
+
+#dropdown:hover ul li{
+display: block;
+}
+
+#menu{
+    display: none;
+}
+
+@keyframes one {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+     }
+}
+
 @media (max-width: 450px) {
     #header h1{
         font-size: 40px;
     }
     #header{
-        height: 350px;
+        height: 400px;
     }
-    #img{
-        background-size:100% 350px;
+    #links-container{
+        display: none;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(0,-50%);
+        font-size: 30px;
     }
 }
