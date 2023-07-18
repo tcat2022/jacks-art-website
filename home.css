@@ -66,7 +66,7 @@ position: relative;
     top: 50%;
     left: 3%;
     transform: translate(0,-50%);
-    font-size: 30px;
+    font-size: 40px;
 }
 
 
@@ -92,7 +92,13 @@ right:0;
 display: block;
     text-decoration: none;
     color: black;
-    font-size: 30px;
+    font-size: 40px;
+    transition: font-size .2s ;
+}
+
+#links-container ul li a:hover
+{
+    font-size:35px;
 }
 
 
@@ -102,13 +108,21 @@ background:rgb(255, 255, 255) ;
 height: 50px;
 display: none;
 transition: all .3s ease-in-out;
-border-bottom: 5px solid black;
+border-top: 2px solid black;
 animation: one .5s ease;
+}
+
+#dropdown  ul li a {
+    font-size: 25px;
 }
 
 #dropdown:hover ul li{
 display: block;
 }
+
+#dropdown ul li a:hover{
+    font-size: 27px;
+    }
 
 #menu{
     display: none;
@@ -140,5 +154,8 @@ display: block;
         top: 50%;
         transform: translate(0,-50%);
         font-size: 30px;
+    }
+    #nav-bar h1{
+        font-size: 35px;
     }
 }
