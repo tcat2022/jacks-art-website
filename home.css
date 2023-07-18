@@ -42,8 +42,7 @@ overflow-x: hidden;
     transform: translate(-50%,-50%);
     font-size: 65px;
     white-space: nowrap;
-    font-family: 'Lumanosimo', cursive;
-    font-family: 'Playfair Display', serif;
+font-weight: bolder;
 }
 
 #wrap{
@@ -67,7 +66,7 @@ position: relative;
     top: 50%;
     left: 3%;
     transform: translate(0,-50%);
-    font-size: 45px;
+    font-size: 40px;
 }
 
 
