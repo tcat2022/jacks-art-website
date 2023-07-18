@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: rgb(252, 251, 242); 
+}
+
+
+
+#header{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    z-index: -1;
+  
+}
+
+#img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("test-art.jpg");
+    background-repeat: no-repeat;
+    background-size:100%,100%;
+}
+
+#header h1{
+    color:rgb(252, 251, 242) ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+    white-space: nowrap;
+}
+
+#wrap{
+    position: sticky;
+    top: 0;
+
+}
+
+#nav-bar{
+position: relative;
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+    z-index: 2;
+    background-color:rgb(255, 255, 255) ;
+}
+
+#nav-bar h1 {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(0,-50%);
+    font-size: 45px;
+}
+
+@media (max-width: 450px) {
+    #header h1{
+        font-size: 40px;
+    }
+    #header{
+        height: 350px;
+    }
+    #img{
+        background-size:100% 350px;
+    }
+}
