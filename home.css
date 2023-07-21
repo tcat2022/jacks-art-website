@@ -48,12 +48,19 @@ font-weight: bolder;
 
 
 #home-links{
-display: flex;
     position: relative;
 height: 700px;
 width: 100%;
+}
 
-gap: 150px;
+#circle-links-container{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    height: 500px;
+    width: 100%;
+    gap:150px;
+    display: flex;
 align-items: center;
 justify-content: center;
 }
@@ -96,9 +103,10 @@ white-space: nowrap;
 #art-section{
     position: absolute;
     left: 50%;
-    top: 21%;
+    top: 25%;
     transform: translate(-50%,-50%);
     font-size: 60px;
+    white-space: nowrap;
 }
 
 #wrap{
@@ -199,22 +207,18 @@ z-index: 1;
 
 #scroll-down{
     position: absolute;
+    width: 80px;
+    height: 80px;
     left: 50%;
     margin-top: 10px;
     transform: translate(-50%);
     z-index: -1;
 }
 
-#scroll {
-width: 100%;
-height: 100%;
-background-color: red;
-}
 
-#scroll p {
+#scroll-text {
     position: absolute;
-    bottom: -35%;
-   left: 100%;
+    left: 50%;
     transform: translate(-50%);
     white-space:nowrap;
     font-size:15px;
@@ -224,7 +228,7 @@ background-color: red;
 #scroll-box{
     position: relative;
     left: 50%;
-
+    transform: translate(-50%);
     width: 35px;
     height: 60px;
 border: 2px solid black;
@@ -274,5 +278,38 @@ opacity: 0;
     }
     #nav-bar h1{
         font-size: 35px;
+    }
+
+    #scroll-down{
+        margin-top: 50px;
+    }
+
+    #home-links{
+        position: relative;
+        height: 1300px;
+        width: 100%;
+        }
+        
+        #circle-links-container{
+            position: absolute;
+            top: 300px;
+            height: 1000px;
+            width: 100%;
+            flex-direction: column;
+            gap: 0px;
+            display: flex;
+align-items: center;
+justify-content: center;
+        }
+
+
+    .circle-links{
+       position: relative;
+        margin-top: 60px;
+    width: 250px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid black;
     }
 }
