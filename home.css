@@ -124,13 +124,13 @@ z-index: 1;
         background-color:rgb(255, 255, 255);
     }
     
-    #nav-bar h1 {
-        position: absolute;
+    #nav-tag {
+       position: absolute;
         top: 50%;
-        left: 3%;
-        transform: translate(0,-50%);
-        font-size: 40px;
-       
+        left: 1%;
+        transform:translate(0,-50%) rotateY(180deg);
+        font-size: 30px;
+      color: black;
     }
     
     
@@ -312,5 +312,8 @@ transform: translate(0,0);
     height: 250px;
     border-radius: 50%;
     border: 1px solid black;
+    }
+    .circle-links img{
+        transform: scale(1.2);
     }
 }
