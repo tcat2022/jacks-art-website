@@ -327,7 +327,7 @@ top: 0;
 }
 
 #blue{
-    view-transition-name: name;
+    view-transition-name:name;
     position: absolute;
     color: blue;
     left: 0;
@@ -336,22 +336,23 @@ top: 0;
 }
 
 @keyframes fade-out {
-    0%{
+   from{
         opacity: 1;
     }
-    100%{
+   to{
         opacity: 0;
     }
 }
 
 @keyframes fade-in {
-    0%{
+   from{
         opacity: 0;
     }
-    100%{
+   to{
         opacity: 1;
     }
 }
+
 
 
 ::view-transition-old(root){
@@ -360,4 +361,8 @@ top: 0;
 
 ::view-transition-new(root){
     animation: fade-in 350ms;
+}
+
+#img{
+    view-transition-name: img;
 }
