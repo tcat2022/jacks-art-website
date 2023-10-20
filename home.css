@@ -317,3 +317,47 @@ transform: translate(0,0);
         transform: scale(1.2);
     }
 }
+
+#red{
+view-transition-name:name;
+position: absolute;
+color:red;
+left: 50%;
+top: 0;
+}
+
+#blue{
+    view-transition-name: name;
+    position: absolute;
+    color: blue;
+    left: 0;
+    top: 0;
+    z-index: 20;
+}
+
+@keyframes fade-out {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+::view-transition-old(root){
+    animation: fade-out 350ms;
+}
+
+::view-transition-new(root){
+    animation: fade-in 350ms;
+}
